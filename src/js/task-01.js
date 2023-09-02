@@ -21,5 +21,5 @@ categoriesDetEl.forEach((categoryItem) => {
 
 
 
-// console.log('Category:', headingEl.textContent);
+
 
