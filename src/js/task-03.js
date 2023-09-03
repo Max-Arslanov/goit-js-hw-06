@@ -20,6 +20,7 @@ images.forEach((image) => {
   const img = document.createElement("img");
   img.src = image.url;
   img.alt = image.alt;
+  img.width = 300;
 
   li.appendChild(img);
   imagesList.insertAdjacentElement("beforeend", li);
