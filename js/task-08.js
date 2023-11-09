@@ -6,11 +6,16 @@ loginForm.addEventListener("submit", function (event) {
   const email = this.elements.email.value;
   const password = this.elements.password.value;
 
-  // Перевірка введених даних
-  if (email === "example@example.com" && password === "password") {
-    alert("Success");
-    // Тут ви можете виконати подальші дії, наприклад, перенаправити користувача на іншу сторінку
+  if (email.trim() === "" || password.trim() === "") {
+    alert("Please fill all the fields");
+  } else if (email !== "example@example.com" || password !== "password") {
+    alert("Incorrect data");
   } else {
-    alert("Error");
+    alert("Success");
+    console.log("Email:", email);
+    console.log("Password:", password);
   }
+    
+
+
 });
