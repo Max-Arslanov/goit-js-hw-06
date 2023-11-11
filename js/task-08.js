@@ -5,17 +5,18 @@ loginForm.addEventListener("submit", function (event) {
 
   const email = this.elements.email.value;
   const password = this.elements.password.value;
+  const credentials = {
+    email: email,
+    password: password,
+  };
 
   if (email.trim() === "" || password.trim() === "") {
     alert("Please fill all the fields");
-  } else if (email !== "example@example.com" || password !== "password") {
-    alert("Incorrect data");
+  // } else if (email !== "example@example.com" || password !== "password") {
+  //   alert("Incorrect data");
   } else {
     alert("Success");
-    console.log("Email:", email);
-    console.log("Password:", password);
-  }
+    console.log(credentials);
     
-
-
+  }
 });
